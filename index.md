@@ -12,7 +12,7 @@ title: top
       {% assign landing_links = site.links %}
 
       {% for link in landing_links %}
-        <br><div class="landing-link"><a href="/{{ link }}">{{ link | remove: "/" }}</a></div>
+        <br><div class="landing-link" id="{{link}}"><p>{{ link | remove: "/" }}</p></div>
       {% endfor %}
     </div>
 
